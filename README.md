@@ -1,5 +1,8 @@
 # ui-kit
 
+## Design
+https://www.figma.com/file/1pVc0h9IezRFmdZHbw4ua5/Steven-Stone-Dev-Test
+
 ## Build Setup
 
 ```bash
