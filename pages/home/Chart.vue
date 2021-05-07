@@ -1,7 +1,7 @@
 <template>
   <!-- Start chart component -->
   <div class="bg-white rounded-lg shadow mb-4 w-full flex flex-col">
-    <div class="header flex justify-between items-center p-3 pl-4 bg-gray-100">
+    <div class="flex justify-between items-center p-3 pl-4 bg-gray-100 border-b rounded-t-lg">
       <div class="font-bold text-base">This Month</div>
       <div>
         <!-- vue select -->
@@ -32,8 +32,5 @@
 </script>
 
 <style>
-.header {
-  box-shadow: 0px 1px 0px #ECECEE;
-}
 </style>
 

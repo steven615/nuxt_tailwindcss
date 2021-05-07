@@ -1,7 +1,7 @@
 <template>
-  <label class="bookmark-container">
-    <input type="checkbox" v-model="toggle">
-    <span class="checkmark">
+  <label class="block relative cursor-pointer select-none text-xl">
+    <input type="checkbox" v-model="toggle" class="absolute opacity-0 cursor-pointer w-0 h-0" />
+    <span class="w-6 h-6 flex items-center justify-center rounded-sm" :class="this.toggle ? 'custom-purple' : 'custom-gray'">
       <span><img :src="require(`~/assets/img/star.svg`)" /></span>
     </span>
   </label>
@@ -22,38 +22,3 @@
     }
   }
 </script>
-
-<style>
-  .bookmark-container {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none;
-  }
-
-  /* Hide the browser's default bookmark */
-  .bookmark-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  /* Create a custom bookmark */
-  .checkmark {
-    height: 24px;
-    width: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ECECEE;
-    border-radius: 3px;
-  }
-
-  /* Show the checkmark when checked */
-  .bookmark-container input:checked ~ .checkmark {
-    background: #575BDE;
-  }
-</style>

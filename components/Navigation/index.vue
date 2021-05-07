@@ -1,12 +1,12 @@
 <template>
   <div class="w-full md:w-60 md:min-w-60 mb-2">
     <!-- Start navbar -->
-    <div class="navigation md:h-screen md:static md:pt-5 md:p-3 p-4 text-white overflow-auto" :class="isShowedNavbar ? 'h-screen fixed inset-0 z-50' : ''">
+    <div class="bg-purple-navbar md:h-screen md:static md:pt-5 md:p-3 p-4 text-white overflow-auto" :class="isShowedNavbar ? 'h-screen fixed inset-0 z-50' : ''">
       <div class="flex justify-between pl-2 md:mb-4">
         <!-- Start navbar brand -->
         <NuxtLink to="/home" class="flex pr-4">
           <img :src="require(`~/assets/img/logo.svg`)" class="pr-1.5" />
-          <span class="title font-black">Dashboard UI Kit 2.0</span>
+          <span class="text-base-custom font-black">Dashboard UI Kit 2.0</span>
         </NuxtLink>
         <!-- End navbar brand -->
         <!-- Start navbar toggle button -->
@@ -118,15 +118,3 @@
     }
   }
 </script>
-
-
-<style>
-.navigation {
-  background: #211B4E;
-}
-
-.title {
-  font-size: 16px;
-  line-height: 32px;
-}
-</style>

@@ -20,10 +20,3 @@
     props: ['listType', 'data', 'page'],
   }
 </script>
-
-<style>
-  .list-item.active, .list-item:hover {
-    background: rgba(87, 91, 222, 0.4);
-  }
-</style>
-

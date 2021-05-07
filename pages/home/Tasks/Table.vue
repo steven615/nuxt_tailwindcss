@@ -1,5 +1,5 @@
 <template>
-  <div class="tasks pr-3 pl-4 md:p-0">
+  <div class="pr-3 pl-4 md:p-0">
     <vue-good-table
       :columns="columns"
       :rows="rows" >
@@ -11,7 +11,7 @@
               @on-change="handleChange" />
           </span>
           <span v-else-if="props.column.field === 'title'">
-            <span :class="[props.formattedRow.checked ? 'complete' : '', 'tasks-title']">{{props.formattedRow.title}}</span>
+            <span :class="[props.formattedRow.checked ? 'opacity-40 line-through' : '', 'text-black']">{{props.formattedRow.title}}</span>
           </span>
           <span v-else-if="props.column.field === 'createdAt'">
             {{getDateRange(props.formattedRow.createdAt)}}
@@ -129,13 +129,6 @@ td {
   font-size: 16px;
   line-height: 24px;
 }
-.tasks-title {
-  color: #110F24;
-}
-.tasks-title.complete {
-  opacity: 0.4;
-  text-decoration: line-through;
-}
 .tasks td:first-child {
   min-width: 40px;
 }
@@ -150,7 +143,7 @@ td {
 .tasks .vgt-responsive {
   overflow: inherit;
 }
-.vgt-inner-wrap {
+.tasks .vgt-inner-wrap {
   box-shadow: none;
 }
 </style>

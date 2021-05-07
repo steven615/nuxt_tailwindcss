@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white rounded-lg shadow mb-4">
-    <div class="header flex justify-between items-center p-3 pl-4 mb-0.5 bg-gray-100">
+  <div class="tasks bg-white rounded-lg shadow mb-4">
+    <div class="flex justify-between items-center p-3 pl-4 mb-0.5 bg-gray-100 border-b rounded-t-lg">
       <div class="font-bold text-base">Tasks</div>
       <div class="flex items-center">
         <!-- vue select -->
@@ -36,7 +36,4 @@
 </script>
 
 <style>
-.header {
-  box-shadow: 0px 1px 0px #ECECEE;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-lg shadow mb-4">
-    <div class="header flex justify-between items-center p-3 pl-4 bg-gray-100">
+    <div class="flex justify-between items-center p-3 pl-4 bg-gray-100 border-b rounded-t-lg">
       <div class="font-bold text-base">Projects</div>
       <button class="w-8 h-8 rounded bg-gray-200 focus:outline-none">+</button>
     </div>
@@ -52,7 +52,4 @@
 </script>
 
 <style>
-.header {
-  box-shadow: 0px 1px 0px #ECECEE;
-}
 </style>
